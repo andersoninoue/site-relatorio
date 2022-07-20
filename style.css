@@ -21,6 +21,59 @@
 }
 /* Fim Cabeçalho */
 
+/* Conteúdo */
+#conteudoPrincipal {
+  padding: 25px;
+}
+
+.bloco {
+  background-color: #ebeff2;
+  border-radius: 16px;
+
+  padding: 20px;
+}
+
+#header-relatorio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-top: 35px;
+}
+
+.nome-relatorio {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.periodo-relatorio {
+  min-width: 200px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo-periodo-relatorio {
+  position: absolute;
+  top: 5px;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  color: #606966;
+}
+
+.periodo:first-child {
+  margin-right: 15px;
+}
+
+.titulo-periodo {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+/* Fim Conteúdo */
 
 /* Media Query - Responsividade Tablets */
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -48,4 +101,32 @@
     max-width: 90px;
   }
   /* Fim Cabeçalho */
+
+  /* Conteúdo */
+  #header-relatorio {
+    flex-direction: column;
+    padding-top: 20px;
+  }
+
+  .nome-relatorio {
+    font-size: 1.1rem;
+  }
+
+  .periodo-relatorio {
+    margin-top: 20px;
+  }
+
+  .titulo-periodo-relatorio {
+    position: relative;
+    top: 0;
+  }
+
+  .titulo-periodo {
+    font-size: 1rem;
+  }
+  
+  .resultado-periodo {
+    font-size: 0.9rem;
+  }
+  /* Fim Conteúdo */
 }
