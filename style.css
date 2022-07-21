@@ -105,6 +105,34 @@
 }
 /* Fim Relatório */
 
+/* Rodapé */
+#footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 108px;
+
+  padding: 10px;
+
+  background-color: #292369;
+}
+
+.texto-site {
+  color: white;
+  text-align: center;
+  display: block;
+}
+
+.logo-oncondo {
+  width: 100px;
+  position: absolute;
+  top: 4px;
+  right: 10px;
+}
+/* Fim Rodapé */
+
 /* Media Query - Responsividade Tablets */
 @media (min-width: 768px) and (max-width: 991.98px) {
   /* Cabeçalho */
@@ -119,7 +147,27 @@
   /* Fim Cabeçalho */
 }
 
-/* Media Query - Responsividade SmartPhones */
+/* Media Query - Responsividade Tablets ou Menor */
+@media (max-width: 991.98px) {
+  /* Rodapé */
+  #footer {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .logo-oncondo {
+    width: 80px;
+
+    margin-top: 15px;
+
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+  /* Fim Rodapé */
+}
+
+/* Media Query - Responsividade SmartPhones Grandes ou Menor */
 @media (max-width: 767.98px) {
   /* Cabeçalho */
   .logo-cliente {
