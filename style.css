@@ -75,6 +75,36 @@
 }
 /* Fim Conteúdo */
 
+/* Relatório */
+#relatorio {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.table-custom {
+  width: 100%;
+  text-align: center;
+  color: #536854;
+  display: inline-table;
+}
+
+#relatorio thead th,
+#relatorio tfoot th {
+  padding: 23px 5px;
+  font-size: 1.2rem;
+  letter-spacing: .5px;
+}
+
+#relatorio tfoot th {
+  padding: 40px 5px 23px;
+}
+
+#relatorio tbody td {
+  padding: 5px;
+}
+/* Fim Relatório */
+
 /* Media Query - Responsividade Tablets */
 @media (min-width: 768px) and (max-width: 991.98px) {
   /* Cabeçalho */
@@ -124,9 +154,19 @@
   .titulo-periodo {
     font-size: 1rem;
   }
-  
+
   .resultado-periodo {
     font-size: 0.9rem;
   }
   /* Fim Conteúdo */
+
+  /* Relatório */
+  #relatorio thead th,
+  #relatorio tfoot th {
+    font-size: 1.05rem;
+  }
+  #relatorio td {
+    font-size: 0.95rem;
+  }
+  /* Fim Relatório */
 }
